@@ -206,7 +206,6 @@ public class GameManager : MonoBehaviour
 
     private void DecreaseTimer()
     {
-        _timer -= _timer <= 0.1f ? 0 : 0.1f;
         if (_timer <= 0.1f)
         {
             CancelInvoke(nameof(DecreaseTimer));
